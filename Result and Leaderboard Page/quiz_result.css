@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.results-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .results-summary {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.chart {
+  text-align: center;
+}
+
+.pie-chart {
+  width: 240px;
+  height: 240px;
+  background: conic-gradient(#d3d3d3 0% 100%, #d3d3d3 100%);
+  border-radius: 49%;
+  margin: 0 auto 10px;
+}
+
+.chart-legend {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.chart-legend li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.correct {
+  background-color: green;
+}
+.wrong {
+  background-color: red;
+}
+.skipped {
+  background-color: gray;
+}
+.unanswered {
+  background-color: lightblue;
+}
+
+.score-details {
+  font-size: 18px;
+  text-align: left;
+}
+
+.score-category .categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .score-category .categories {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.categories > div {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .categories > div {
+    width: 45%;
+  }
+}
+
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.actions button {
+  font-size: 18px;
+  background-color: #ff9800;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: #e68a00;
+}
