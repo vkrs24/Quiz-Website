@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="quiz_result.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz Results</h1>
+      <div class="results-summary">
+        <div class="chart">
+          <div class="pie-chart" id="pie-chart"></div>
+          <ul class="chart-legend">
+            <li><span class="legend-color correct"></span>Correct (0%)</li>
+            <li><span class="legend-color wrong"></span>Wrong (0%)</li>
+            <li><span class="legend-color skipped"></span>Skipped (0%)</li>
+            <li>
+              <span class="legend-color unanswered"></span>Unanswered (0%)
+            </li>
+          </ul>
+        </div>
+        <div class="score-details">
+          <p><strong>Score:</strong> 0%</p>
+          <p><strong>Time Taken:</strong> 00m:00s</p>
+          <p>Correct Answers: 0</p>
+          <p>Wrong Answers: 0</p>
+          <p>Unanswered: 0</p>
+          <p>Skipped: 0</p>
+        </div>
+      </div>
+      <div class="score-category">
+        <h2>Score by category</h2>
+        <div class="categories">
+          <div>Number Series: 0%</div>
+          <div>Numerical Word Problems: 0%</div>
+          <div>Deductive Reasoning: 0%</div>
+          <div>Word Analogy: 0%</div>
+          <div>Inductive Reasoning: 0%</div>
+          <div>Spatial Ability: 0%</div>
+          <div>Abstract Reasoning: 0%</div>
+          <div>Word Relationships: 0%</div>
+          <div>Deductive Reasoning: 0%</div>
+          <div>Number Rows: 0%</div>
+        </div>
+      </div>
+      <div class="actions">
+        <button onclick="retake_quiz()">Retake the Quiz</button>
+        <button onclick="go_to_home_page()">Go to Home Page</button>
+      </div>
+    </div>
+    <script src="quiz_result.js"></script>
+  </body>
+</html>

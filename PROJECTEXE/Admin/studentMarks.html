@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Quiz Dashboard</title>
+    <link rel="stylesheet" href="studentMarks.css" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h2>ONLINE QUIZ</h2>
+        <div class="menu-icon">
+          <span>&#9776;</span>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="profile.png" alt="Admin Profile" />
+        <h3>Admin</h3>
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <a
+            href="C:\Users\Malk-pc\OneDrive\Desktop\PROJECTEXE\Admin\adminDashboard.html"
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <a
+            href="C:\Users\Malk-pc\OneDrive\Desktop\PROJECTEXE\Admin\studentMarks.html"
+            >Student</a
+          >
+        </li>
+        <li>
+          <a
+            href="C:\Users\Malk-pc\OneDrive\Desktop\PROJECTEXE\Admin\leaderboard.html"
+            >Quiz Analytics</a
+          >
+        </li>
+        <li><a href="#">Questions</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <header>
+        <button class="logout-button">Logout</button>
+      </header>
+      <div class="cards">
+        <div class="card card-1" id="totalStudentsCard">
+          <h4>Total Students</h4>
+          <div class="card-content">
+            <p>2</p>
+          </div>
+        </div>
+        <div class="card card-2">
+          <h4>Student Marks</h4>
+          <div class="card-content">
+            <p>40</p>
+          </div>
+        </div>
+      </div>
+      <div class="student-details" id="studentDetails" style="display: none">
+        <h2>Student Details</h2>
+        <ul>
+          <li>Student 1: John Doe phonenumber: 8242112423 marks:50</li>
+          <li>Student 2: Jane Smith phonenumber: 8242112423 marks:50</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p>St Josephs Team</p>
+    </footer>
+    <script src="C:\Users\Malk-pc\OneDrive\Desktop\PROJECTEXE\Admin\scripts.js"></script>
+  </body>
+</html>
